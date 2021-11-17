@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
   postData()async{
     var response = await http.post(Uri.parse("http://192.168.1.200"),
         body: {
-          "cry": true,
+          "cry": "true",
         });
     print(response.body);
   }

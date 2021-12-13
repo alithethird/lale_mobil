@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Benim Bebeğim',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        //canvasColor: Colors.tealAccent,
       ),
       home: MyHomePage(),
     );
@@ -102,24 +104,26 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text("title"),
+        title: Text("Benim Bebeğim"),
       ),
       body: Center(
-        child: RaisedButton.icon(
+
+        child: ElevatedButton.icon(
           onPressed: sendID,
           icon: Icon(
             Icons.brightness_5_outlined
           ),
-          label: Text('Connect to Lale'),
-          color: Colors.pinkAccent,
+          label: Text('Cihaza bağlan'),
+          //color: Colors.pinkAccent,
         ),
-      ),
 
+      ),
+/*
       floatingActionButton: FloatingActionButton(
         onPressed: postData,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ), // This trailing comma makes auto-formatting nicer for build methods.*/
     );
 
   }

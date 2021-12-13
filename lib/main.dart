@@ -13,6 +13,23 @@ Future<Album> createAlbum(String title) async {
     }),
   );
 */
+
+/*
+What is your first and last name?
+  [Unknown]:  ali
+What is the name of your organizational unit?
+  [Unknown]:  lale
+What is the name of your organization?
+  [Unknown]:  lale
+What is the name of your City or Locality?
+  [Unknown]:  istanbul
+What is the name of your State or Province?
+  [Unknown]:  istanbul
+What is the two-letter country code for this unit?
+  [Unknown]:  34
+
+  password: 69142145Lale
+ */
 void main() {
   runApp(const MyApp());
 }
